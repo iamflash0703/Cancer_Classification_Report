@@ -25,7 +25,7 @@ This is NOT a tutorial notebook. This is a **deployable clinical tool** that:
 
 ## 🚀 Live Demo
 
-**API Endpoint:** ` https://cancer-classification-report.onrender.com` 
+**API Endpoint:** `(https://cancer-classification-report.onrender.com)` 
 
 **Try it with curl:**
 ```bash
@@ -230,7 +230,7 @@ MIT License — Free to use for educational and research purposes.
 ## 👨‍💻 Author
 
 **Shovit Nayak** — Aspiring Data Scientist | ITER, SOA University
-[LinkedIn] • [GitHub] • [Live API]
+[LinkedIn] • [(https://github.com/iamflash0703)] • [Live API]
 
 ---
 
