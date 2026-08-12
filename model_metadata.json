@@ -1,0 +1,48 @@
+{
+  "model_name": "Logistic Regression",
+  "threshold": 0.40171781485116403,
+  "feature_names": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "target_names": [
+    "Benign",
+    "Malignant"
+  ],
+  "metrics": {
+    "accuracy": 0.9718804920913884,
+    "precision": 0.9495412844036697,
+    "recall": 0.9764150943396226,
+    "f1": 0.9627906976744186,
+    "f2": 0.9709193245778611,
+    "roc_auc": 0.9977009671793245
+  }
+}
