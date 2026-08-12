@@ -27,49 +27,6 @@ This is NOT a tutorial notebook. This is a **deployable clinical tool** that:
 
 **API Endpoint:** `https://your-app.onrender.com/predict` *(replace after deployment)*
 
-**Try it with curl:**
-```bash
-curl -X POST "https://your-app.onrender.com/predict" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "features": {
-      "mean radius": 17.99, "mean texture": 10.38, "mean perimeter": 122.8,
-      "mean area": 1001.0, "mean smoothness": 0.1184, "mean compactness": 0.2776,
-      "mean concavity": 0.3001, "mean concave points": 0.1471,
-      "mean symmetry": 0.2419, "mean fractal dimension": 0.07871,
-      "radius error": 1.095, "texture error": 0.9053, "perimeter error": 8.589,
-      "area error": 153.4, "smoothness error": 0.006399,
-      "compactness error": 0.04904, "concavity error": 0.05373,
-      "concave points error": 0.01587, "symmetry error": 0.03003,
-      "fractal dimension error": 0.006193, "worst radius": 25.38,
-      "worst texture": 17.33, "worst perimeter": 184.6, "worst area": 2019.0,
-      "worst smoothness": 0.1622, "worst compactness": 0.6656,
-      "worst concavity": 0.7119, "worst concave points": 0.2654,
-      "worst symmetry": 0.4601, "worst fractal dimension": 0.1189
-    }
-  }'
-```
-
-**Response:**
-```json
-{
-  "prediction": "Malignant",
-  "probability_malignant": 0.9823,
-  "probability_benign": 0.0177,
-  "threshold_used": 0.312,
-  "top_contributing_features": [
-    {"feature": "worst perimeter", "shap_value": 0.8234, "direction": "increases_risk"},
-    {"feature": "mean concavity", "shap_value": 0.6512, "direction": "increases_risk"},
-    {"feature": "worst radius", "shap_value": 0.5891, "direction": "increases_risk"}
-  ],
-  "recommendation": "HIGH RISK: Immediate biopsy and oncologist consultation strongly recommended. Do not delay.",
-  "model_version": "v2.0-xgboost-f2-optimized",
-  "sensitivity": "98.2%"
-}
-```
-
----
-
 ## 📊 Model Performance
 
 | Metric | Value | Why It Matters |
@@ -136,8 +93,7 @@ python -m venv venv
 
 # Windows
 venv\Scripts\activate
-# Mac/Linux
-source venv/bin/activate
+
 
 pip install -r requirements.txt
 ```
@@ -234,4 +190,4 @@ MIT License — Free to use for educational and research purposes.
 
 ---
 
-*Built with ❤️ and a mission to make AI that actually helps people.*
+*Built with Love and a mission to make AI that actually helps people.*
