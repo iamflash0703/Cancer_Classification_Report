@@ -25,11 +25,11 @@ This is NOT a tutorial notebook. This is a **deployable clinical tool** that:
 
 ## 🚀 Live Demo
 
-**API Endpoint:** `https://your-app.onrender.com/predict` *(replace after deployment)*
+**API Endpoint:** ` https://cancer-classification-report.onrender.com` 
 
 **Try it with curl:**
 ```bash
-curl -X POST "https://your-app.onrender.com/predict" \
+curl -X POST " https://cancer-classification-report.onrender.com/predict" \
   -H "Content-Type: application/json" \
   -d '{
     "features": {
